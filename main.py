@@ -19,7 +19,7 @@ def clean_output(text):
     return text.strip()
 
 # === Groq API setup ===
-client = Groq(api_key="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")
+client = Groq(api_key=st.secrets["groq_api_key"])                    
 
 # === Streamlit App Setup ===
 st.set_page_config(page_title="Resume Weaponizer v2", layout="centered")
